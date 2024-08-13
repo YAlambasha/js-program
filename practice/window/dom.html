@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--bom
+    start location-->
+    <h1>java location object</h1>
+    <button onclick="location.reload()">reload the page</button>
+    <button onclick="location.replace('https://www.google.com')">navigate page using replace</button>
+    <button onclick="location.assign('https://www.google.com')">navigate page with assign</button>
+
+    <!--screen-->
+
+    <!--DOM-->
+    <!--dom navgition-->
+    <script>
+        let parent=document;
+        let bodyElement=document.body;
+        let headElement=document.head;
+console.log(parent);
+
+//parentNode/parentelement:navigate to the arent node or element
+
+//childnode/children
+let bodychild=bodyElement.childNodes;
+console.log(bodychild);//NodeList(18) [text, comment, text, h1, text, button, text, button, text, button, text, comment, text, comment, text, comment, text, script]
+let bodychildren=bodyElement.children;
+console.log(bodychildren);//html collection[h1,hr,p,p,script]
+
+//firstchild/firstElementchild
+//navigate to the first child element.
+let firstchild=bodyElement.firstElementChild;//text h1
+let firstchildq=bodyElement.firstChild;//text
+let lastelement=htmlBody.lastelementchild;//<<script tag
+let lastelementchild=htmlBody.lastchild;//script
+
+
+
+
+
+</script>
+
+</body>
+</html>
