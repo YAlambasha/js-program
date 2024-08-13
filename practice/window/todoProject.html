@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Simple Dom Todo App</h1>
+        <input type="text" id="inputfield"/>
+        <button class="btn">clickme</button>
+        <div class="todolistelem">
+            <!-- <p id="todoFirst"></p> -->
+        </div>
+    </div>
+        <!--dom curd operation
+    1createElement(tagName):create a new html element.
+    2.appendChild(node):append a node as the last child of a parent node.
+    3.removeChild(node):remove a child node from its parent.
+    4.addEventListner(event,function):create an event listner to handle events
+    5.removeEvenetListner(event,function):remove an event listner
+    6.setAttribute(name,value):set the value of an attribute on an element
+    7.getAttribute:Get the value of a specifc attribute on an element
+    8.innerHTML:read or update the html content of an element
+    9.textContent:read or update the text content of an element
+    
+    -->
+    <script>
+        let inputElem=document.getElementById("inputfield");
+        let clickbtn=document.querySelector('.btn');
+        let todoElem=document.querySelector(".todolistelem");
+
+        const addTodo=()=>{
+           console.log( inputElem.value);
+        //    todoFirst.textContent=inputElem.value;
+        
+        let pElem=document.createElement("p");
+        pElem.textContent=inputElem.value;
+        console.log(pElem);
+        todoElem.append(pElem);
+        inputElem.value="";
+        }
+          clickbtn.addEventListener('click',()=>{
+          addTodo();
+          });
+
+          todoElem.addEventListener('click',(event)=>{
+          console.log(event.target);
+          let currentElem=event.target;
+          currentElem.remove();
+          });
+    </script>
+    
+</body>
+</html>

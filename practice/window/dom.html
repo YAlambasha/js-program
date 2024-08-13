@@ -9,6 +9,7 @@
     <!--bom
     start location-->
     <h1>java location object</h1>
+    <p>hlo</p>
     <button onclick="location.reload()">reload the page</button>
     <button onclick="location.replace('https://www.google.com')">navigate page using replace</button>
     <button onclick="location.assign('https://www.google.com')">navigate page with assign</button>
@@ -23,7 +24,7 @@
         let headElement=document.head;
 console.log(parent);
 
-//parentNode/parentelement:navigate to the arent node or element
+
 
 //childnode/children
 let bodychild=bodyElement.childNodes;
@@ -35,8 +36,25 @@ console.log(bodychildren);//html collection[h1,hr,p,p,script]
 //navigate to the first child element.
 let firstchild=bodyElement.firstElementChild;//text h1
 let firstchildq=bodyElement.firstChild;//text
-let lastelement=htmlBody.lastelementchild;//<<script tag
-let lastelementchild=htmlBody.lastchild;//script
+// let lastelement=htmlBody.lastelementchild;//<<script tag
+// let lastelementchild=htmlBody.lastchild;//script
+
+//nextsibling/nextelmentsiblings:
+let nextsibling=firstchild.nextElementSibling;
+
+let previoussibling=nextsibling.previousElementSibling;
+let previousibling=nextsibling.previousSibling;
+console.log(nextsibling);//<p>hlo<p>
+    console.log(previoussibling);//<h1>java location object</h1>
+    console.log(previousibling);//text
+
+    //parentNode/parentelement:navigate to the arent node or element
+
+let parentNode=previoussibling.parentElement;
+console.log(parentNode);//<body>...</body>
+
+  //closest(selector):find the closest ancestor of thr current element that matches a given selector
+    
 
 
 

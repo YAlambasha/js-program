@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h1 id="heading">DOm api</h1>
+    <ul class="list-of--nodes">
+    <li>
+        1 node
+    </li>
+    <li>2 node</li>
+    <li>3 node</li>
+    <li>4 node</li>
+    <li style="display: none;">5 node</li>
+    </ul>
+    </div>
+    <div>
+        <h1>Dom API 2</h1>
+        <input type="text"/>
+        <button>click me</button>
+        <div class="value"></div>
+    </div>
+    <script>
+        //id
+        let findElementById=document.getElementById("heading");
+        console.log(findElementById);// <h1 id="heading">DOm api</h1>
+        console.log(findElementById.innerHTML);//Dom api
+        console.log(findElementById.innerText);//Dom api
+        console.log(findElementById.textContent);//Dom api
+        
+        //class
+        
+        const findElementByclass=document.getElementsByClassName("list-of--nodes");
+        console.log(findElementByclass);// HTMLCollection [ul.list-of--nodes]0: ul.list-of--nodesaccessKey: ""ariaAtomic: nullariaAutoComplete: nullariaBrailleLabel: nullariaBrailleRoleDescription: nullariaBusy: nullariaChecked: nullariaColCount: nullariaColIndex: nullariaColSpan: nullariaCurrent: nullariaDescription: nullariaDisabled: nullariaExpanded: nullariaHasPopup: nullariaHidden: nullariaInvalid: nullariaKeyShortcuts: nullariaLabel: nullariaLevel: nullariaLive: nullariaModal: nullariaMultiLine: nullariaMultiSelectable: nullariaOrientation: nullariaPlaceholder: nullariaPosInSet: nullariaPressed: nullariaReadOnly: nullariaRelevant: nullariaRequired: nullariaRoleDescription: nullariaRowCount: nullariaRowIndex: nullariaRowSpan: nullariaSelected: nullariaSetSize: nullariaSort: nullariaValueMax: nullariaValueMin: nullariaValueNow: nullariaValueText: nullassignedSlot: nullattributeStyleMap: StylePropertyMap {size: 0}attributes: NamedNodeMap {0: class, class: class, length: 1}autocapitalize: ""autofocus: falsebaseURI: "http://127.0.0.1:5500/practice/window/domfilter.html"childElementCount: 5childNodes: NodeList(11) [text, li, text, li, text, li, text, li, text, li, text]children: HTMLCollection(5) [li, li, li, li, li]classList: DOMTokenList ['list-of--nodes', value: 'list-of--nodes']className: "list-of--nodes"clientHeight: 72clientLeft: 0clientTop: 0clientWidth: 304compact: falsecontentEditable: "inherit"dataset: DOMStringMap {}dir: ""draggable: falseeditContext: nullelementTiming: ""enterKeyHint: ""firstChild: textfirstElementChild: lihidden: falseid: ""inert: falseinnerHTML: "\n    <li>\n        1 node\n    </li>\n    <li>2 node</li>\n    <li>3 node</li>\n    <li>4 node</li>\n    <li style=\"display: none;\">5 node</li>\n    "innerText: "1 node\n2 node\n3 node\n4 node"inputMode: ""isConnected: trueisContentEditable: falselang: ""lastChild: textlastElementChild: lilocalName: "ul"namespaceURI: "http://www.w3.org/1999/xhtml"nextElementSibling: nullnextSibling: textnodeName: "UL"nodeType: 1nodeValue: nullnonce: ""offsetHeight: 72offsetLeft: 8offsetParent: bodyoffsetTop: 80offsetWidth: 304onabort: nullonanimationend: nullonanimationiteration: nullonanimationstart: nullonauxclick: nullonbeforecopy: nullonbeforecut: nullonbeforeinput: nullonbeforematch: nullonbeforepaste: nullonbeforetoggle: nullonbeforexrselect: nullonblur: nulloncancel: nulloncanplay: nulloncanplaythrough: nullonchange: nullonclick: nullonclose: nulloncontentvisibilityautostatechange: nulloncontextlost: nulloncontextmenu: nulloncontextrestored: nulloncopy: nulloncuechange: nulloncut: nullondblclick: nullondrag: nullondragend: nullondragenter: nullondragleave: nullondragover: nullondragstart: nullondrop: nullondurationchange: nullonemptied: nullonended: nullonerror: nullonfocus: nullonformdata: nullonfullscreenchange: nullonfullscreenerror: nullongotpointercapture: nulloninput: nulloninvalid: nullonkeydown: nullonkeypress: nullonkeyup: nullonload: nullonloadeddata: nullonloadedmetadata: nullonloadstart: nullonlostpointercapture: nullonmousedown: nullonmouseenter: nullonmouseleave: nullonmousemove: nullonmouseout: nullonmouseover: nullonmouseup: nullonmousewheel: nullonpaste: nullonpause: nullonplay: nullonplaying: nullonpointercancel: nullonpointerdown: nullonpointerenter: nullonpointerleave: nullonpointermove: nullonpointerout: nullonpointerover: nullonpointerrawupdate: nullonpointerup: nullonprogress: nullonratechange: nullonreset: nullonresize: nullonscroll: nullonscrollend: nullonsearch: nullonsecuritypolicyviolation: nullonseeked: nullonseeking: nullonselect: nullonselectionchange: nullonselectstart: nullonslotchange: nullonstalled: nullonsubmit: nullonsuspend: nullontimeupdate: nullontoggle: nullontouchcancel: nullontouchend: nullontouchmove: nullontouchstart: nullontransitioncancel: nullontransitionend: nullontransitionrun: nullontransitionstart: nullonvolumechange: nullonwaiting: nullonwebkitanimationend: nullonwebkitanimationiteration: nullonwebkitanimationstart: nullonwebkitfullscreenchange: nullonwebkitfullscreenerror: nullonwebkittransitionend: nullonwheel: nullouterHTML: "<ul class=\"list-of--nodes\">\n    <li>\n        1 node\n    </li>\n    <li>2 node</li>\n    <li>3 node</li>\n    <li>4 node</li>\n    <li style=\"display: none;\">5 node</li>\n    </ul>"outerText: "1 node\n2 node\n3 node\n4 node"ownerDocument: documentparentElement: divparentNode: divpart: DOMTokenList [value: '']popover: nullprefix: nullpreviousElementSibling: h1#headingpreviousSibling: textrole: nullscrollHeight: 72scrollLeft: 0scrollTop: 0scrollWidth: 304shadowRoot: nullslot: ""spellcheck: truestyle: CSSStyleDeclaration {accentColor: '', additiveSymbols: '', alignContent: '', alignItems: '', alignSelf: '', …}tabIndex: -1tagName: "UL"textContent: "\n    \n        1 node\n    \n    2 node\n    3 node\n    4 node\n    5 node\n    "title: ""translate: truetype: ""virtualKeyboardPolicy: ""[[Prototype]]: HTMLUListElement(...)length: 1[[Prototype]]: HTMLCollection
+        console.log(...findElementByclass);//<ul class="list-of-nodes">.....</ul>
+        for(let elem of findElementByclass){
+        console.log(elem);////<ul class="list-of-nodes">.....</ul>
+     
+    }
+    for(let elem of findElementByclass){
+        console.log(elem.innerText);//css take exculding hidden text
+        /*
+        1 node
+        2 node
+        3 node
+        4 node*/
+          console.log(elem.innerHTML);
+          /*
+           <li>
+        1 node
+    </li>
+    <li>2 node</li>
+    <li>3 node</li>
+    <li>4 node</li>
+    <li style="display: none;">5 node</li>*/
+          console.log(elem.textContent);//css will not apply
+          /*
+             1 node
+    
+    2 node
+    3 node
+    4 node
+    5 node*/
+    }
+
+      //tagName
+      const getElementByTagName=document.getElementsByTagName("li");
+      console.log(getElementByTagName);
+      for (let name of getElementByTagName){
+        console.log(name);//li li li li li
+      }  
+       
+      //queryselector
+      const findelementbyqueryselector=document.querySelector('#heading');
+      console.log(findelementbyqueryselector);
+      console.log(findelementbyqueryselector.innerHTML="world best js course");//>DOm api changes to world best js cousre
+      console.log(findelementbyqueryselector.innerText="world best js course");
+
+      const findelementbyqueryselectorAll=document.querySelector('li');
+      const findelementbyqueryselectorALL=document.querySelectorAll('li');
+      console.log(findelementbyqueryselectorAll);//only one li first
+      console.log(findelementbyqueryselectorALL);//ALL LI  li li li li li li
+      findelementbyqueryselectorALL.forEach((curElem)=>console.log(curElem));//all content inside li <li>1 node</li>
+      
+    </script>
+    <!--dom curd operation
+    createElement(tagName):create a new html element.
+    appendChild(node):append a node as the last child of a parent node.
+    removeChild(node):remove a child node from its parent.
+    addEventListner(event,function):create an event listner to handle events
+    removeEvenetListner(event,function):remove an event listner
+    setAttribute(name,value):set the value of an attribute on an element
+    getAttribute:Get the value of a specifc attribute on an element
+    innerHTML:read or update the html content of an element
+    textContent:read or update the text content of an element
+    
+    -->
+</body>
+</html>
