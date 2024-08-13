@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        section{
+            text-align: center;
+        }
+        .rectangle{
+            width: 35rem;
+            height: 35rem;
+            background: #000;
+            border-radius: 1rem;
+            margin-bottom: 3.2rem;
+            transition: all 0.6s linear;
+            box-shadow: rgba(239,247,87,0.2) 0px 8px 24px;
+        }
+        .addTransitions{
+            border-radius: 50%;
+            
+        }
+        .addTransitions3{
+            border-radius: 50%;
+            background-color: #f5ee62;
+            translate: -30rem 0;
+        }
+        .addTransitions4{
+            border-radius: 50%;
+            background-color: #f5ee62;
+            translate: 30rem 0;
+        }
+        .addTransitions5{
+            border-radius: 50%;
+            background-color: #f5ee62;
+            translate: -30rem 0;
+        }
+        .addTransitions6{
+            border-radius: 0%;
+            background-color: #f5ee62;
+            translate: 0rem 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="rectangle">
+            <button id="myButton">Click me</button>
+        </div>
+    </section>
+    <script>
+        let myButton=document.getElementById("myButton");
+        let recDiv=document.querySelector(".rectangle");
+      
+        const handleMouseEvenets=()=>{
+            console.log("click");
+            recDiv.style.backgroundColor ="#f5ee62";
+        }
+        const handleMouseEvenets2=()=>{
+            console.log("dblclick");
+            recDiv.classList.add("addTransitions");
+        }
+        const handleMouseEvenets3=()=>{
+            
+            recDiv.classList.add("addTransitions3");
+        }
+        const handleMouseEvenets4=()=>{
+            
+            recDiv.classList.add("addTransitions4");
+        }
+        const handleMouseEvenets5=()=>{
+            
+            recDiv.classList.add("addTransitions5");
+        }
+        const handleMouseEvenets6=()=>{
+            
+            recDiv.classList.add("addTransitions6");
+        }
+             
+        recDiv.addEventListener("click",handleMouseEvenets);
+        recDiv.addEventListener("mouseover",handleMouseEvenets3);
+        recDiv.addEventListener("mouseover",handleMouseEvenets3);
+        recDiv.addEventListener("mouseout",handleMouseEvenets4);
+        recDiv.addEventListener("mousedown",handleMouseEvenets5);
+        recDiv.addEventListener("mouseup",handleMouseEvenets6);
+
+    </script>
+    
+</body>
+</html>

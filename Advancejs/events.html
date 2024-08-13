@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--inline event-->
+   <h1>Inline Event</h1>
+   <button onclick="alert('welcome')">greeting</button>
+   <button ondblclick="alert('welcome')">greeting again</button>   
+   <button onmouseover="alert('welcome')">greeting</button> 
+   
+   <!--start Dom event Handler-->
+   <h1>dom event Handler--</h1>
+   <button id="myBtn">greeting</button>
+   <button id="myBtn1"> greeting again</button>
+  
+   
+   <!--addeventlistner event Handler-->
+   <h1>dom -addeventlistner Handler--</h1>
+   <button id="myBtn2">greeting</button>
+   <button id="myBtn3"> greeting again</button>
+   
+    
+   <script>
+//    document.getElementById('myBtn').onclick=()=>{
+
+//    "alert('welcome')"};
+   document.getElementById("myBtn").onclick=function(){
+ alert("To the world best");
+   };
+   document.getElementById("myBtn1").onmouseover=function(){
+ alert("To the world best");
+   };
+
+ //-addeventlistner event Handler
+ document.getElementById('myBtn2').addEventListener('click',function(){
+    alert("To the world best");
+});
+document.getElementById('myBtn2').addEventListener('click',()=>{
+    alert("To the world best");
+});
+document.getElementById('myBtn3').addEventListener('mouseover',()=>{
+    alert("To the world best");
+});
+
+   </script>
+
+</body>
+</html>
