@@ -1,0 +1,6 @@
+objects
+what is an objects
+objects are a fundamental part of javascript ,providing a way to group related data and functions together.
+in js an object is a collection of key-value pairs,where each key is a string(or symbol) and each value can be any data type,
+inculding other objects.objects can have properties and methods,making them versatile for various used cases
+
